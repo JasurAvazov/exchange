@@ -14,8 +14,12 @@ export function init() {
             el.addEventListener('click',() => {
                 headerBtn?.forEach(all => {all.classList.remove('active')})
                 el.classList.add('active')
-                const languageText = el.innerHTML
-                document.querySelector('.header__lang-title').innerHTML = languageText
+
+                const img = el.getAttribute('img-path')
+                document.querySelector('.header__lang-title img').setAttribute('src',img)
+                document.querySelector('.header__lang-title source').setAttribute('srcset',img)
+                const languageText = el.querySelector('p').innerHTML
+                document.querySelector('.header__lang-title p').innerHTML = languageText
             })
         })
 
@@ -47,6 +51,14 @@ export function init() {
             }
         })
 
+
+        document.querySelectorAll('.locations-rate__box .stat')?.forEach(stat => {
+            if (stat.innerHTML.charAt(0) == '+'){
+                stat.style.color = 'green'
+            } else {
+                stat.style.color = 'red'
+            }
+        })
     }
     menu()
 }

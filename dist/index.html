@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230114132918">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230114234948">
     <title>exchange</title>
   </head>
   <body id="body"> 
@@ -12,17 +12,17 @@
       <div class="container header__con"> 
         <button class="header__menu">menu <span class="header__con-back-btn" /></button><a class="header__logo" href="#">ExChange-rates </a>
         <div class="header__lang"> 
-          <div class="header__lang-title">
+          <div class="header__lang-title"><picture><source srcset="img/uz.webp" type="image/webp"><img src="img/uz.png" alt=""/></picture>
             <p>uz</p>
           </div>
           <div class="header__lang-toggle">
-            <div class="header__lang-toggle-btn active">
+            <div class="header__lang-toggle-btn active" img-path="img/uz.png"><picture><source srcset="img/uz.webp" type="image/webp"><img src="img/uz.png" alt=""/></picture>
               <p>uz</p>
             </div>
-            <div class="header__lang-toggle-btn">
+            <div class="header__lang-toggle-btn" img-path="img/ru.png"><picture><source srcset="img/ru.webp" type="image/webp"><img src="img/ru.png" alt=""/></picture>
               <p>ru</p>
             </div>
-            <div class="header__lang-toggle-btn">
+            <div class="header__lang-toggle-btn" img-path="img/en.png"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
               <p>en</p>
             </div>
           </div>
@@ -33,19 +33,84 @@
       <div class="container menu__con">
         <ul class="menu__ul">
           <li class="menu__li"><a href="#">Курсы валют</a></li>
-          <li class="menu__li"><a href="#">Курсы валют</a></li>
-          <li class="menu__li"><a href="#">Курсы валют</a></li>
+          <li class="menu__li"><a href="#">Курсы ресурсов</a></li>
+          <li class="menu__li"><a href="#">Новости</a></li>
           <li class="menu__li"><a href="#">Курсы валют</a></li>
           <li class="menu__li"><a href="#">Курсы валют</a></li>
           <li class="menu__li"><a href="#">Курсы валют</a></li>
           <li class="menu__li"><a href="#">Курсы валют</a></li>
         </ul>
         <div class="locations-rate">
-          <div class="locations-rate__box"></div>
+          <div class="locations-rate__con">
+            <div class="locations-rate__box"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">+12</p>
+            </div>
+            <div class="locations-rate__box"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">+12</p>
+            </div>
+            <div class="locations-rate__box"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">+12</p>
+            </div>
+            <div class="locations-rate__box"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">+12</p>
+            </div>
+            <div class="locations-rate__box"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">-12</p>
+            </div>
+            <div class="locations-rate__box"><picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">-12</p>
+            </div>
+            <div class="locations-rate__box"> <picture><source srcset="img/en.webp" type="image/webp"><img src="img/en.png" alt=""/></picture>
+              <p>usd</p>
+              <p>11.335</p>
+              <p class="stat">+12</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="wrapper"> </div>
-    <script src="js/app.min.js?_v=20230114132918"> </script>
+    <div class="wrapper"> 
+      <main class="main" id="main">
+        <div class="container main-con">
+          <div class="main__left"></div>
+          <div class="main__right">
+            <div class="main__convert-con">
+              <h2 class="main__convert-con__title">Конвертор</h2>
+              <div class="convert_block_item">
+                <input type="number" placeholder="введите сумму..." id="val"/>
+                <select id="cur1">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>RUB</option>
+                  <option>UZS</option>
+                </select>
+              </div>
+              <div class="convert_block_item">
+                <div class="convert_result">= 0</div>
+                <select id="cur2">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>RUB</option>
+                  <option>UZS</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/app.min.js?_v=20230114234948"> </script>
   </body>
 </html>

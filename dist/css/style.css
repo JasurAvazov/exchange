@@ -75,7 +75,11 @@
 .header__lang {
   width: 100px;
   height: 40px;
-  border: 2px solid white;
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left, white, #b0afaf) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(white), to(#b0afaf)) 1;
+     border-image: linear-gradient(to right, white, #b0afaf) 1;
   cursor: pointer;
   z-index: 1;
 }
@@ -96,6 +100,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
+}
+
+.header__lang-title img {
+  width: 16px;
 }
 
 .header__lang-title p {
@@ -133,7 +142,14 @@
           align-items: center;
   background-color: white;
   text-transform: uppercase;
+  gap: 10px;
   font-size: 14px;
+}
+
+.header__lang-toggle-btn img {
+  width: 16px;
+  position: relative;
+  top: 2px;
 }
 
 .header__lang-toggle-btn.active {
@@ -185,6 +201,7 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0.6;
+  border-bottom: 1px solid #b0afaf;
 }
 
 .menu__con {
@@ -265,10 +282,121 @@
   opacity: 1;
 }
 
+.menu .locations-rate {
+  width: 100%;
+  position: relative;
+}
+
+.menu .locations-rate__con {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow-x: scroll;
+  padding-right: 40px;
+  padding-bottom: 25px;
+}
+
+.menu .locations-rate__con::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 50px 0 70px 100px #24292f;
+          box-shadow: 50px 0 70px 100px #24292f;
+}
+
+.menu .locations-rate__con::-webkit-scrollbar {
+  background-color: #24292f;
+  height: 5px;
+  border-radius: 2px;
+}
+
+.menu .locations-rate__con::-webkit-scrollbar-thumb {
+  background-color: #b0afaf;
+  border-radius: 2px;
+}
+
 .menu .locations-rate__box {
-  border: 1px solid #b0afaf;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24292f), to(#24292f)) padding-box, -webkit-gradient(linear, left top, right top, from(white), to(#b0afaf)) border-box;
+  background: -o-linear-gradient(#24292f, #24292f) padding-box, -o-linear-gradient(left, white, #b0afaf) border-box;
+  background: linear-gradient(#24292f, #24292f) padding-box, linear-gradient(to right, white, #b0afaf) border-box;
   border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .locations-rate__box img {
+  width: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.menu .locations-rate__box p {
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.main-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main__left {
+  width: calc(100% - 400px);
   padding: 20px;
+}
+
+.main__right {
+  width: 380px;
+}
+
+.main__convert-con {
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24292f), to(#24292f)) padding-box, -webkit-gradient(linear, left top, right top, from(white), to(#b0afaf)) border-box;
+  background: -o-linear-gradient(#24292f, #24292f) padding-box, -o-linear-gradient(left, white, #b0afaf) border-box;
+  background: linear-gradient(#24292f, #24292f) padding-box, linear-gradient(to right, white, #b0afaf) border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.main__convert-con__title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 400;
 }
 
 * {
@@ -290,7 +418,7 @@ html,
 body {
   height: 100%;
   min-width: 360px;
-  background-color: #f4f4f8;
+  background-color: #24292f;
 }
 
 .wrapper {

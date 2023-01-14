@@ -5,11 +5,15 @@ mixin header()
             a.header__logo(href="#") ExChange-rates 
             .header__lang 
                 .header__lang-title
+                    img(src="@img/uz.png", alt="")
                     p uz
                 .header__lang-toggle
-                    .header__lang-toggle-btn.active
+                    .header__lang-toggle-btn.active(img-path="img/uz.png")
+                        img(src="@img/uz.png", alt="")
                         p uz
-                    .header__lang-toggle-btn
+                    .header__lang-toggle-btn(img-path="img/ru.png")
+                        img(src="@img/ru.png", alt="")
                         p ru
-                    .header__lang-toggle-btn
+                    .header__lang-toggle-btn(img-path="img/en.png")
+                        img(src="@img/en.png", alt="")
                         p en

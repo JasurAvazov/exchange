@@ -1,4 +1,22 @@
 mixin main()
-    main.main
+    main.main#main
         .container.main-con
-            p main 
+            .main__left
+
+            .main__right
+                .main__convert-con
+                    h2.main__convert-con__title Конвертор
+                    .convert_block_item
+                        input(type="number" placeholder="введите сумму...")#val
+                        select#cur1
+                            option USD
+                            option EUR
+                            option RUB
+                            option UZS
+                    .convert_block_item
+                        .convert_result = 0
+                        select#cur2
+                            option USD
+                            option EUR
+                            option RUB
+                            option UZS

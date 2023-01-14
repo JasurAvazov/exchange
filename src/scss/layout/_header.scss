@@ -47,7 +47,9 @@
     &__lang{
         width: 100px;
         height: 40px;
-        border: 2px solid white;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, white, #b0afaf) 1;
         cursor: pointer;
         z-index: 1;
         &:hover{
@@ -61,6 +63,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 10px;
+            img{
+                width: 16px;
+            }
             p{
                 color: white;
                 text-transform: uppercase;
@@ -82,7 +88,13 @@
                 align-items: center;
                 background-color: white;
                 text-transform: uppercase;
+                gap: 10px;
                 font-size: 14px;
+                img{
+                    width: 16px;
+                    position: relative;
+                    top: 2px;
+                }
                 &.active{
                     display: none;
                 }

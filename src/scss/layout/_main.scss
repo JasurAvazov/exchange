@@ -1,0 +1,30 @@
+.main{
+    margin-top: 20px;
+    &-con{
+        // background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__left{
+        width: calc(100% - 400px);
+        padding: 20px;
+        // background-color: green;
+    }
+    &__right{
+        width: 380px;
+    }
+    &__convert-con{
+        padding: 20px;
+        background: linear-gradient(#24292f, #24292f) padding-box,
+                    linear-gradient(to right, white, #b0afaf) border-box;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        &__title{
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 400;
+        }
+    }
+}
