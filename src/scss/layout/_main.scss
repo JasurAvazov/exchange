@@ -26,5 +26,37 @@
             color: white;
             font-weight: 400;
         }
+        .convert_block_item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            select{
+                width: 80px;
+                height: 40px;
+                border: 0;
+            }
+            &:nth-last-child(1){
+                margin-top: 20px;
+            }
+            #val{
+                width: calc(100% - 80px);
+                height: 40px;
+                padding: 10px;
+                border: 1px solid white;
+                margin-bottom: 20px;
+            }
+            .result__con{
+                width: calc(100% - 80px);
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                background-color: white;
+                overflow-x: scroll;
+                &::-webkit-scrollbar{
+                    height: 0;
+                }
+            }
+        }
     }
 }

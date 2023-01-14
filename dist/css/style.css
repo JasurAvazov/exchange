@@ -399,6 +399,55 @@
   font-weight: 400;
 }
 
+.main__convert-con .convert_block_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__convert-con .convert_block_item select {
+  width: 80px;
+  height: 40px;
+  border: 0;
+}
+
+.main__convert-con .convert_block_item:nth-last-child(1) {
+  margin-top: 20px;
+}
+
+.main__convert-con .convert_block_item #val {
+  width: calc(100% - 80px);
+  height: 40px;
+  padding: 10px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.main__convert-con .convert_block_item .result__con {
+  width: calc(100% - 80px);
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  background-color: white;
+  overflow-x: scroll;
+}
+
+.main__convert-con .convert_block_item .result__con::-webkit-scrollbar {
+  height: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
