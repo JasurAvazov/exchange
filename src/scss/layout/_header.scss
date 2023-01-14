@@ -1,6 +1,11 @@
 .header{
     width: 100%;
     background-color: #24292f;
+    border-bottom: 1px solid #b0afaf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     &__con{
         padding: 10px 20px;
         display: flex;
@@ -31,26 +36,10 @@
                
             }
         }
-        & span{
-            &::before{
-                margin-bottom: 4px;
-            }
-            &::before,
-            &::after{
-                content: '';
-                width: 35px;
-                height: 2px;
-                display: block;
-                background-color: white;
-                margin-left: 8px;
-                transition: all .2s;
-            }
-        }
     }
     &__logo{
         font-size: 20px;
         color: white;
-        text-transform: uppercase;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -60,6 +49,7 @@
         height: 40px;
         border: 2px solid white;
         cursor: pointer;
+        z-index: 1;
         &:hover{
             .header__lang-toggle{
                 height: auto;
@@ -97,6 +87,35 @@
                     display: none;
                 }
             }
+        }
+    }
+}
+
+.header__con-back-btn{
+    &::before{
+        margin-bottom: 4px;
+    }
+    &::before,
+    &::after{
+        content: '';
+        width: 34px;
+        height: 2px;
+        display: block;
+        background-color: white;
+        margin-left: 8px;
+        transition: all .2s;
+        position: relative;
+    }
+    &.active{
+        &::before{
+            width: 30px;
+            margin-bottom: -2px;
+            transform: rotate(45deg);
+        }
+        &::after{
+            width: 30px;
+            margin-top: -2px;
+            transform: rotate(-45deg);
         }
     }
 }

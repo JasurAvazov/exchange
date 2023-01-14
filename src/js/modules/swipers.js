@@ -1,13 +1,14 @@
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
-// export function init() {
-//     const swiper = new Swiper('.swiper',{
-//         modules: [Navigation, Pagination],
-//         Pagination: {
+export function init() {
+    // const swiper = new Swiper('.swiper',{
+    //     modules: [Navigation, Pagination],
+    //     Pagination: {
 
-//         },
-//         Navigation: {
+    //     },
+    //     Navigation: {
 
-//         }
-//     });
-// }
+    //     }
+    // });
+    console.log('swiper js');
+}
