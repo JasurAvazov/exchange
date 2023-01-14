@@ -4,7 +4,7 @@
     overflow: hidden;
     position: fixed;
     left: 0;
-    background-color: #24292f;
+    background-color: var(--primary-bg-color);
     transition: all .3s ease-in-out;
     opacity: 0.6;
     border-bottom: 1px solid #b0afaf;
@@ -33,7 +33,7 @@
         a{
             font-size: 15px;
             font-weight: 400;
-            color: white;
+            color: var(--primary-text-color);
             &::after{
                 content: '';
                 position: absolute;
@@ -76,10 +76,10 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                box-shadow: 50px 0 70px 100px #24292f;
+                box-shadow: 50px 0 70px 100px var(--primary-bg-color);
             }
             &::-webkit-scrollbar{
-                background-color: #24292f;
+                background-color: var(--primary-bg-color);
                 height: 5px;
                 border-radius: 2px;
             }
@@ -89,8 +89,8 @@
             }
         }
         &__box{
-            background: linear-gradient(#24292f, #24292f) padding-box,
-                        linear-gradient(to right, white, #b0afaf) border-box;
+            background: linear-gradient(var(--primary-bg-color), var(--primary-bg-color)) padding-box,
+                        linear-gradient(to right, var(--primary-text-color), #b0afaf) border-box;
             border-radius: 10px;
             border: 1px solid transparent;
             padding: 30px;
@@ -105,7 +105,7 @@
             }
             p{
                 text-transform: uppercase;
-                color: white;
+                color: var(--primary-text-color);
                 font-size: 16px;
                 font-weight: 400;
                 white-space: nowrap;

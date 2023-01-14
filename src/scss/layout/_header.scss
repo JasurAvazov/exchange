@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    background-color: #24292f;
+    background-color: var(--primary-bg-color);
     border-bottom: 1px solid #b0afaf;
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@
         justify-content: space-between;
         align-items: center;
         font-size: 16px;
-        color: white;
+        color: var(--primary-text-color);
         text-transform: uppercase;
         transition: all .2s;
         &:hover{
@@ -39,7 +39,7 @@
     }
     &__logo{
         font-size: 20px;
-        color: white;
+        color: var(--primary-text-color);
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -49,7 +49,7 @@
         height: 40px;
         border-width: 2px;
         border-style: solid;
-        border-image: linear-gradient(to right, white, #b0afaf) 1;
+        border-image: linear-gradient(to right, var(--primary-text-color), #b0afaf) 1;
         cursor: pointer;
         z-index: 1;
         &:hover{
@@ -68,7 +68,7 @@
                 width: 16px;
             }
             p{
-                color: white;
+                color: var(--primary-text-color);
                 text-transform: uppercase;
                 position: relative;
                 bottom: 1px;
@@ -113,7 +113,7 @@
         width: 34px;
         height: 2px;
         display: block;
-        background-color: white;
+        background-color: var(--primary-text-color);
         margin-left: 8px;
         transition: all .2s;
         position: relative;

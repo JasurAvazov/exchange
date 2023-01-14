@@ -16,14 +16,14 @@
     }
     &__convert-con{
         padding: 20px;
-        background: linear-gradient(#24292f, #24292f) padding-box,
-                    linear-gradient(to right, white, #b0afaf) border-box;
+        background: linear-gradient(var(--primary-bg-color), var(--primary-bg-color)) padding-box,
+                    linear-gradient(to right, var(--primary-text-color), #b0afaf) border-box;
         border-radius: 10px;
         border: 1px solid transparent;
         &__title{
             font-size: 18px;
             margin-bottom: 20px;
-            color: white;
+            color: var(--primary-text-color);
             font-weight: 400;
         }
         .convert_block_item{
@@ -42,7 +42,7 @@
                 width: calc(100% - 80px);
                 height: 40px;
                 padding: 10px;
-                border: 1px solid white;
+                border: 1px solid var(--primary-text-color);
                 margin-bottom: 20px;
             }
             .result__con{
@@ -56,6 +56,14 @@
                 &::-webkit-scrollbar{
                     height: 0;
                 }
+            }
+        }
+        .arrow-down{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 16px;
             }
         }
     }
