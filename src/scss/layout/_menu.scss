@@ -7,7 +7,7 @@
     background-color: var(--primary-bg-color);
     transition: all .3s ease-in-out;
     opacity: 0.6;
-    border-bottom: 1px solid #b0afaf;
+    box-shadow: 0 0 10px 3px #e5e5e5;
     &__con{
         display: flex;
         justify-content: center;
@@ -91,7 +91,7 @@
         &__box{
             background: linear-gradient(var(--primary-bg-color), var(--primary-bg-color)) padding-box,
                         linear-gradient(to right, var(--primary-text-color), #b0afaf) border-box;
-            border-radius: 10px;
+            border-radius: 6px;
             border: 1px solid transparent;
             padding: 30px;
             display: flex;

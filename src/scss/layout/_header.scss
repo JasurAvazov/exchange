@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     background-color: var(--primary-bg-color);
-    border-bottom: 1px solid #b0afaf;
+    border-bottom: 1px solid #e5e5e5;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,16 +26,6 @@
         color: var(--primary-text-color);
         text-transform: uppercase;
         transition: all .2s;
-        &:hover{
-            color: #b0afaf;
-            span{
-                &::after,
-                &::before{
-                    background-color: #b0afaf;
-                }
-               
-            }
-        }
     }
     &__logo{
         font-size: 20px;
@@ -47,9 +37,9 @@
     &__lang{
         width: 100px;
         height: 40px;
-        border-width: 2px;
-        border-style: solid;
-        border-image: linear-gradient(to right, var(--primary-text-color), #b0afaf) 1;
+        // border-width: 1px;
+        // border-style: solid;
+        // border-image: linear-gradient(to right, var(--primary-text-color), #b0afaf) 1;
         cursor: pointer;
         z-index: 1;
         &:hover{

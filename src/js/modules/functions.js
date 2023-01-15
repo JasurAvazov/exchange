@@ -45,3 +45,26 @@ export function convertor() {
         }
     }
 }
+
+export function offer() {
+    const offerBtn = document.querySelectorAll('.main__offer-btn ul li a')
+    const offerCon = document.querySelectorAll('.main__offer-con')
+    offerBtn?.forEach(el => {
+        el.addEventListener('click',() => {
+            offerCon.forEach(all => {
+                all.classList.remove('active')
+            })
+            offerBtn.forEach(all => {
+                all.classList.remove('active')
+            })
+            const target = el.getAttribute("slide-number")
+            offerCon.forEach(el => {
+                let id = el.getAttribute('slide-number')
+                if (id == target) {
+                    el.classList.add('active')
+                }
+            })
+            el.classList.add('active')
+        })
+    })
+}

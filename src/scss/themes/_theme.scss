@@ -15,11 +15,10 @@ html,
 body{
     height: 100%;
     min-width: 360px;
-    background-color: var(--primary-bg-color);
+    background-color: white;
 }
 
 :root{
-    // --primary-bg-color: #24292f;
     --primary-bg-color: white;
     --primary-text-color: black;
 }
