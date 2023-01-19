@@ -68,3 +68,27 @@ export function offer() {
         })
     })
 }
+
+export function news() {
+    const news = document.getElementById('news')
+    const divs = document.querySelectorAll('.main-left .left-wrapper')
+    const btns = document.querySelectorAll('.main-news__box-title')
+    const closeBtns = document.querySelectorAll('.news-close')
+
+    btns.forEach(el => {
+        el.addEventListener('click',() => {
+            news.classList.add('active')
+            divs?.forEach(el => {
+                el.style.display = 'none';
+            })
+        })
+    }) 
+    closeBtns?.forEach(el => {
+        el.addEventListener('click',() => {
+            news.classList.remove('active')
+            divs?.forEach(el => {
+                el.style.display = 'block';
+            })
+        })
+    })
+}

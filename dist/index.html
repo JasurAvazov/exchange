@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230119130028">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230119145552">
     <title>exchange</title>
   </head>
   <body id="body"> 
     <header class="header" id="header"> 
       <div class="container header__con"> 
-        <button class="header__menu">menu <span class="header__con-back-btn" /></button><a class="header__logo" href="#">LOGO </a>
+        <button class="header__menu">menu <span class="header__con-back-btn" /></button><a class="header__logo news-close" href="#">LOGO </a>
         <div class="header__lang"> 
           <div class="header__lang-title"><picture><source srcset="img/uz.webp" type="image/webp"><img src="img/uz.png" alt=""/></picture>
             <p>uz</p>
@@ -84,9 +84,22 @@
     <div class="wrapper"> 
       <main class="main" id="main">
         <div class="container main-con"> 
-          <div class="main-path"></div>
           <div class="main-left"> 
-            <div class="main__exchanges"> 
+            <div class="main__new" id="news">
+              <div class="main__new-title">
+                <p>Вы должны получить денежный перевод от ваших близких в Европе?</p>
+                <div class="main__new-info">
+                  <p>10.12.2022</p><a class="main__new-info__telegram" href="#">
+                    <p>Читайте нас в телеграм </p><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"/></svg></a>
+                </div>
+                <hr/>
+              </div>
+              <p class="main__new-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolor. Aut similique eius fuga. Odit eius accusamus sint? Dolorem, commodi fuga asperiores qui consequuntur eius exercitationem quisquam nostrum laboriosam eos vero molestias minima assumenda illo libero quas earum aperiam nisi cum nam cupiditate molestiae rem hic maxime? Molestiae, ratione mollitia.</p>
+              <div class="main__new-source">
+                <p>Источник:</p><a href="#">HamkorBank</a>
+              </div>
+            </div>
+            <div class="main__exchanges left-wrapper">
               <div class="main__exchanges-title">Курсы вальют </div>
               <hr/>
               <div class="main__exchanges-con">
@@ -188,7 +201,7 @@
                 </div>
               </div>
             </div>
-            <div class="main__offer">
+            <div class="main__offer left-wrapper">
               <h1 class="main__offer-title">Лучшие курсы обмена валют в обменных пунктах</h1>
               <div class="main__offer-btn">
                 <ul>
@@ -614,6 +627,6 @@
         <p class="footer__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum delectus rerum at reiciendis facilis eveniet iste accusantium magnam modi! Et?</p>
       </div>
     </footer>
-    <script src="js/app.min.js?_v=20230119130028"> </script>
+    <script src="js/app.min.js?_v=20230119145552"> </script>
   </body>
 </html>

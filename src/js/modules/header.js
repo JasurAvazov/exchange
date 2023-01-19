@@ -1,7 +1,4 @@
 export function init() {
-
-    console.log('header init');
-
     const header = document.getElementById('header')
     const headerHeight = header.clientHeight
     document.getElementById('body').style.marginTop = headerHeight+'px'

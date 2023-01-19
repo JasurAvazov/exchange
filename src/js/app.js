@@ -5,6 +5,7 @@ import * as header from "./modules/header.js";
 functions.isWebp();
 functions.convertor();
 functions.offer();
+functions.news();
 swipers.init();
 header.init();
 

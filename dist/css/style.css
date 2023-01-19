@@ -346,18 +346,130 @@
 }
 
 .main {
-  margin: 20px 0;
+  margin: 40px 0 0;
+}
+
+.main__new {
+  width: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.main__new.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__new-paragraph {
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+}
+
+.main__new-source {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.main__new-source a {
+  color: #119649;
+}
+
+.main__new-title {
+  font-size: 20px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.main__new-title hr {
+  border: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #e5e5e5;
+}
+
+.main__new-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #119649;
+}
+
+.main__new-info p {
+  font-size: 16px;
+}
+
+.main__new-info__telegram {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #2696d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.main__new-info__telegram:hover {
+  -webkit-box-shadow: 0 0 20px -2px #2696d5;
+          box-shadow: 0 0 20px -2px #2696d5;
+}
+
+.main__new-info__telegram p {
+  color: white;
+}
+
+.main__new-info__telegram svg {
+  width: 20px;
+  height: 20px;
+}
+
+.main__new-info__telegram svg path {
+  fill: white;
 }
 
 .main__exchanges {
   width: 100%;
+  display: block;
 }
 
 .main__exchanges-title {
   font-size: 20px;
   color: black;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .main__exchanges hr {
@@ -493,6 +605,7 @@
 
 .main__offer {
   border-radius: 6px;
+  display: block;
 }
 
 .main__offer-title {
@@ -752,9 +865,11 @@
 }
 
 .main-news__title {
+  width: 100%;
   font-size: 20px;
   color: black;
   font-weight: 400;
+  text-align: center;
 }
 
 .main-news__box {
