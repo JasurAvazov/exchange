@@ -52,7 +52,7 @@ export function init() {
         })
 
 
-        document.querySelectorAll('.locations-rate__box .stat')?.forEach(stat => {
+        document.querySelectorAll('.stat')?.forEach(stat => {
             if (stat.innerHTML.charAt(0) == '+'){
                 stat.style.color = 'green'
             } else {
