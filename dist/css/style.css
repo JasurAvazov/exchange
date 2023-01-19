@@ -346,7 +346,36 @@
 }
 
 .main {
-  margin: 40px 0 0;
+  margin: 20px 0 0;
+}
+
+.main__path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.main__path a {
+  color: gray;
+}
+
+.main__path a:hover {
+  color: black;
+}
+
+.main__path a::after {
+  margin-left: 6px;
+  content: "/";
+}
+
+.main__path a:last-child::after {
+  margin-left: 0;
+  content: "";
 }
 
 .main__new {
