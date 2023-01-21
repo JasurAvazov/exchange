@@ -7,7 +7,7 @@
     background-color: var(--primary-bg-color);
     transition: all .3s ease-in-out;
     opacity: 0.6;
-    box-shadow: 0 0 10px 3px #e5e5e5;
+    z-index: 90;
     &__con{
         display: flex;
         justify-content: center;

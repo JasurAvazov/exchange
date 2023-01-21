@@ -1,11 +1,11 @@
 .header{
     width: 100%;
     background-color: var(--primary-bg-color);
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border-color);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     &__con{
         padding: 10px 20px;
         display: flex;
@@ -37,9 +37,6 @@
     &__lang{
         width: 100px;
         height: 40px;
-        // border-width: 1px;
-        // border-style: solid;
-        // border-image: linear-gradient(to right, var(--primary-text-color), #b0afaf) 1;
         cursor: pointer;
         z-index: 1;
         &:hover{
@@ -76,8 +73,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: white;
+                background-color: var(--primary-bg-color);
                 text-transform: uppercase;
+                color: var(--primary-text-color);
                 gap: 10px;
                 font-size: 14px;
                 img{

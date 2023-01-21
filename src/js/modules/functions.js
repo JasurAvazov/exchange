@@ -70,14 +70,16 @@ export function offer() {
 }
 
 export function news() {
-    const news = document.getElementById('news')
+    const newsCon = document.querySelectorAll('.news__container')
     const divs = document.querySelectorAll('.main-left .left-wrapper')
     const btns = document.querySelectorAll('.main-news__box-title')
     const closeBtns = document.querySelectorAll('.news-close')
 
     btns.forEach(el => {
         el.addEventListener('click',() => {
-            news.classList.add('active')
+            newsCon.forEach(el => {
+                el.classList.add('active')
+            })
             divs?.forEach(el => {
                 el.style.display = 'none';
             })
@@ -85,7 +87,9 @@ export function news() {
     }) 
     closeBtns?.forEach(el => {
         el.addEventListener('click',() => {
-            news.classList.remove('active')
+            newsCon.forEach(el => {
+                el.classList.remove('active')
+            })
             divs?.forEach(el => {
                 el.style.display = 'block';
             })
